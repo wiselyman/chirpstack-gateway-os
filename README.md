@@ -1,4 +1,18 @@
-# ChirpStack Gateway OS
+# 在Ubuntu 24下编译Chirpstack
+## 安装Docker
+https://wiki.crowncloud.net/?How_to_Install_and_use_Docker_Compose_on_Ubuntu_24_04
+
+## 修改feeds.conf.default
+```
+src-git packages https://github.com/openwrt/packages.git;openwrt-23.05
+src-git luci https://github.com/openwrt/luci.git;openwrt-23.05
+src-git routing https://github.com/openwrt/routing.git;openwrt-23.05
+src-link chirpstack /workdir/feeds/chirpstack-openwrt-feed
+```
+## 安装二进制docker-compose
+https://docs.docker.com/compose/install/standalone/
+
+## ChirpStack Gateway OS
 
 ChirpStack Gateway OS is an open-source [OpenWrt](https://openwrt.org/) based
 embedded OS for LoRa<sup>&reg;</sup> gateways. It provides a web-interface for
