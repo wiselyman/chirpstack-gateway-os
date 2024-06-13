@@ -5,9 +5,9 @@ https://wiki.crowncloud.net/?How_to_Install_and_use_Docker_Compose_on_Ubuntu_24_
 ## 让编译好的镜像预安装docker
 `conf/base_raspberrypi_bcm27xx_bcm2708/.config`,去掉前面的注释
 ```
-CONFIG_PACKAGE_docker is not set
-CONFIG_PACKAGE_docker-compose is not set
-CONFIG_PACKAGE_dockerd is not set
+CONFIG_PACKAGE_docker=y
+CONFIG_PACKAGE_docker-compose=y
+CONFIG_PACKAGE_dockerd=y
 ```
 
 
