@@ -1,5 +1,6 @@
 # 在Ubuntu 24下编译Chirpstack
 ## 安装Docker
+https://linuxconfig.org/running-ubuntu-24-04-lts-on-docker
 https://wiki.crowncloud.net/?How_to_Install_and_use_Docker_Compose_on_Ubuntu_24_04
 
 ## 让编译好的镜像预安装docker
@@ -19,7 +20,7 @@ src-git routing https://github.com/openwrt/routing.git;openwrt-23.05
 src-link chirpstack /workdir/feeds/chirpstack-openwrt-feed
 ```
 ## 安装二进制docker-compose
-https://docs.docker.com/compose/install/standalone/
+https://linuxconfig.org/running-ubuntu-24-04-lts-on-docker
 
 ## 安装依赖包
 ```
