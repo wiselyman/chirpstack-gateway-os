@@ -2,6 +2,15 @@
 ## 安装Docker
 https://wiki.crowncloud.net/?How_to_Install_and_use_Docker_Compose_on_Ubuntu_24_04
 
+## 让编译好的镜像预安装docker
+`conf/base_raspberrypi_bcm27xx_bcm2708/.config`,去掉前面的注释
+```
+CONFIG_PACKAGE_docker is not set
+CONFIG_PACKAGE_docker-compose is not set
+CONFIG_PACKAGE_dockerd is not set
+```
+
+
 ## 修改feeds.conf.default
 ```
 src-git packages https://github.com/openwrt/packages.git;openwrt-23.05
@@ -16,6 +25,18 @@ https://docs.docker.com/compose/install/standalone/
 ```
 sudo apt install ncurses-dev
 
+```
+
+## 初始化
+```
+make init
+```
+
+## 编译
+```
+make devshell
+make switch-env ENV=base_raspberrypi_bcm27xx_bcm2708
+make
 ```
 
 ## ChirpStack Gateway OS
