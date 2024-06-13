@@ -23,7 +23,7 @@ https://docs.docker.com/compose/install/standalone/
 
 ## 安装依赖包
 ```
-sudo apt install ncurses-dev
+sudo apt install ncurses-dev gawk  
 
 ```
 
