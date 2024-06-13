@@ -30,6 +30,7 @@ sudo apt install ncurses-dev gawk  
 ## 初始化
 ```
 make init
+sudo chown -R $USER openwrt
 ```
 
 ## 编译
