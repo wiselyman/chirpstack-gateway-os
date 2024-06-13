@@ -12,6 +12,12 @@ src-link chirpstack /workdir/feeds/chirpstack-openwrt-feed
 ## 安装二进制docker-compose
 https://docs.docker.com/compose/install/standalone/
 
+## 安装依赖包
+```
+sudo apt install ncurses-dev
+
+```
+
 ## ChirpStack Gateway OS
 
 ChirpStack Gateway OS is an open-source [OpenWrt](https://openwrt.org/) based
